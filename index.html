@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#16070f">
+<title>For My Bbu ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;600;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#11060d;color:#fff;font-family:Inter,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 10%,#81234e66,transparent 35%),radial-gradient(circle at 90% 15%,#642d7866,transparent 35%),linear-gradient(135deg,#180711,#09040a 60%,#1b0913)}
+.screen{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:22px 14px}
+.card{width:min(760px,100%);padding:30px 20px;border:1px solid #ffffff20;border-radius:30px;background:#ffffff0b;backdrop-filter:blur(15px);box-shadow:0 25px 80px #0009}
+.center{text-align:center}.script{font-family:"Great Vibes",cursive;color:#ff9fc8}
+h1,h2{font-family:"Cormorant Garamond",serif}h1{font-size:clamp(3rem,11vw,6rem);line-height:.9;margin:12px 0}
+h2{font-size:clamp(2rem,8vw,3.5rem);color:#ffd3e2;margin:8px 0}p{line-height:1.8;color:#f2e5eb}.small{font-size:.83rem;color:#d7c2cc}
+.hidden{display:none!important}.heart{font-size:4rem;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.btn{border:0;border-radius:999px;padding:14px 23px;margin:7px;background:linear-gradient(135deg,#ff4f96,#c72f70);color:#fff;font-weight:700;cursor:pointer;box-shadow:0 10px 35px #ff4f9640}
+.btn.secondary{background:#ffffff12;border:1px solid #ffffff22;box-shadow:none}
+.cake-wrap{height:310px;display:flex;align-items:flex-end;justify-content:center}
+.cake{width:270px;height:170px;position:relative;margin-bottom:20px}
+.tier{position:absolute;left:50%;transform:translateX(-50%);border-radius:18px 18px 24px 24px;background:linear-gradient(#ffb5d0,#d84e86);box-shadow:inset 0 -12px #92265755,0 15px 35px #0007}
+.t1{width:250px;height:75px;bottom:0}.t2{width:205px;height:65px;bottom:58px}.t3{width:160px;height:55px;bottom:108px}
+.candle{position:absolute;bottom:145px;width:14px;height:60px;border-radius:8px;background:repeating-linear-gradient(135deg,#fff 0 7px,#ff6da6 7px 14px);z-index:3}
+.c1{left:80px}.c2{left:128px}.c3{left:176px}
+.flame{position:absolute;width:18px;height:28px;left:-2px;top:-25px;background:#ffd35c;border-radius:60% 40% 60% 40%;box-shadow:0 0 24px #ffb52e;animation:flicker .16s infinite alternate}
+@keyframes flicker{to{transform:scale(.82) rotate(4deg)}}.cake.off .flame{display:none}.cake.off .candle{opacity:.5}
+.letter{background:#fff9fc;color:#3a1727;border-radius:22px;padding:24px;text-align:left}
+.letter h3{font-family:"Great Vibes";color:#bb386c;font-size:2.4rem;margin:0 0 12px}
+.letter p{color:#492a37;white-space:pre-line}
+.photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.photo-grid img{width:100%;height:270px;object-fit:cover;border-radius:18px}
+video{width:100%;border-radius:22px;margin-top:15px;background:#000}
+.music{display:flex;align-items:center;gap:14px;padding:15px;border:1px solid #ffffff20;border-radius:18px;background:#ffffff0b;margin-top:18px}
+.disc{width:48px;height:48px;border-radius:50%;background:radial-gradient(circle,#ffd4e5 0 12%,#df4d8b 13% 32%,#4b172d 33% 100%);flex:none}
+.music a{color:#ffd0e2;text-decoration:none;font-weight:700}
+.confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.piece{position:absolute;top:-20px;width:8px;height:15px;animation:fall 3.5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(800deg)}}
+@media(max-width:600px){.card{padding:25px 14px}.photo-grid img{height:210px}}
+</style>
+</head>
+<body>
+<div class="confetti" id="confetti"></div>
+
+<section class="screen" id="s1"><div class="card center">
+<div class="heart">❤️</div><div class="script" style="font-size:2.7rem">A little surprise...</div>
+<h1>for my Bbu</h1><p style="font-family:'Cormorant Garamond';font-size:1.35rem">For my special one,<br>from your special one. 🫶🏻</p>
+<button class="btn" onclick="go('s2')">Open Your Surprise ✨</button></div></section>
+
+<section class="screen hidden" id="s2"><div class="card center">
+<div class="script" style="font-size:3rem">Before the wishes...</div><h2>Make a wish, Bbu 🥺❤️</h2>
+<p>There are three little candles waiting for you.<br>Close your eyes, make a wish and blow them out. 🕯️</p>
+<button class="btn" onclick="go('s3')">Let's Go 🎂</button></div></section>
+
+<section class="screen hidden" id="s3"><div class="card center">
+<div class="script" style="font-size:3rem">Make a wish...</div><h2>Blow the candles 🕯️</h2>
+<div class="cake-wrap"><div class="cake" id="cake">
+<div class="candle c1"><div class="flame"></div></div><div class="candle c2"><div class="flame"></div></div><div class="candle c3"><div class="flame"></div></div>
+<div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div></div></div>
+<p id="micText">🎤 Allow microphone access, then blow toward your phone.</p>
+<button class="btn" onclick="startMic()">Blow Candles 💨</button>
+<button class="btn secondary" onclick="finishCake()">Tap if mic doesn't work</button>
+</div></section>
+
+<section class="screen hidden" id="s4"><div class="card">
+<div class="center"><div class="heart">🎉</div><h1 style="font-size:clamp(2.7rem,10vw,5rem)">Happy Birthdayyy Bbu ❤️</h1><p class="script" style="font-size:2.1rem">You made my life more beautiful.</p></div>
+<div class="letter"><h3>My birthday letter for you...</h3><p>Happy Birthdayyy Babu ❤️😭🫶🏻
+
+Sabse pehle toh thank you ki aap meri life mein aaye… aur uske baad thank you ki ab tak mera sath ho or mujhe jhel rahe ho 😂😭❤️ Sach bolu toh apka bina meri life itni beautiful nahi hoti. Jitni Ab h 😌🥹❤️
+
+Aap mere liye sirf mera lover future husband nahi ho. Aap mere best friend, meri happiness, mera comfort person, meri safe place aur mera favourite headache ho 😂❤️ Apsa baat karna, Apka saath hasi-mazaak karna, bina kisi reason ke ladna aur phir thodi der baad aise baat karna jaise kuch hua hi nahi but ye sab meri favourite memories hain. 🥹🫶🏻
+
+Kabhi kabhi aap itna gussa dilata ho karte ho ki sach mein mann karta h k baat hi n kru 😭😂 but phir sochti hu ki m khud bina baat kre aapse dur n reh skti to baat Krna ksa band kr du, yaad toh aapki hi aayegi na. 🥺❤️
+
+Jokes apart, I genuinely want you to be happy. Life mein tum jo bhi dream h apka, woh sab apko mile. Or un dream m mein bhi rehu. Apko har success mile, har khushi mile aur jab bhi life difficult ho, Apko kabhi ye feel na ho ki Aap akela ho… because I will always be there for you. 🫂❤️
+
+Thank you for staying, for understanding me, for handling my mood swings, my overthinking, my nakhre and all my stupid little things. 😭❤️ Maybe main har baar words mein express nahi kar pati, but you really mean a lot to me. Bohot zyada. 🥹🧿
+
+I hope hum aise hi saath mein haste rahein, ladte rahein, ek dusre ko irritate karte rahein aur har birthday saath celebrate karein. ❤️
+
+Bas ek wish hai meri — Aap hamesha mere saath rehna. 🥺❤️
+I love you more than I can explain. ❤️🧿
+
+Happy Birthdayyyyyy Bbu mere pagal, mere favourite person. ❤️🎂🫶🏻
+
+Aur haan, zyada emotional hone ki zarurat nahi hai… birthday tumhara hai, rona mujhe hai 😭😂❤️</p></div>
+<div class="center"><button class="btn" onclick="go('s5')">Our Memories 📸</button></div></div></section>
+
+<section class="screen hidden" id="s5"><div class="card"><div class="center"><div class="script" style="font-size:3rem">Some of my favourite moments...</div><h2>Us. ❤️</h2></div>
+<div class="photo-grid"><img src="assets/photo1.jpg"><img src="assets/photo2.jpg"><img src="assets/photo3.jpg"><img src="assets/photo4.jpg"></div>
+<div class="center"><button class="btn" onclick="go('s6')">One Last Surprise 🎥</button></div></div></section>
+
+<section class="screen hidden" id="s6"><div class="card"><div class="center"><div class="script" style="font-size:3rem">One last surprise for you...</div><h2>Just for my Bbu ❤️</h2></div>
+<video controls playsinline preload="metadata" src="assets/birthday-video.mp4"></video>
+<div class="music"><div class="disc"></div><div style="flex:1"><b>Khat — Kagaz Ke Phool 🌸</b><div class="small">Navjot Ahuja</div></div>
+<a href="https://www.youtube.com/results?search_query=Navjot+Ahuja+Khat+Kagaz+Ke+Phool" target="_blank">Play 🎵</a></div>
+<p class="small">The song is a Play button because browsers can block automatic audio and music licensing can prevent us from bundling the track. If you have a legally obtained audio file, you can add it to the assets folder.</p>
+<div class="center"><button class="btn" onclick="go('s7')">My Last Words ❤️</button></div></div></section>
+
+<section class="screen hidden" id="s7"><div class="card center"><div class="heart">💗</div>
+<div class="script" style="font-size:3.4rem">Happy Birthdayyy Bbu</div><h1 style="font-size:clamp(2.6rem,9vw,5rem)">I Love You ❤️</h1>
+<p style="font-family:'Cormorant Garamond';font-size:1.5rem">Thank you for being the most beautiful part of my life.</p>
+<p class="script" style="font-size:2.4rem">Always yours, Bbu. 🧿🫶🏻</p>
+<button class="btn" onclick="location.reload()">Replay From Beginning ✨</button></div></section>
+
+<script>
+function go(id){document.querySelectorAll('.screen').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');scrollTo(0,0)}
+let stream,ctx,analyser,raf;
+async function startMic(){document.getElementById('micText').textContent='Listening... now blow 💨❤️';
+try{stream=await navigator.mediaDevices.getUserMedia({audio:true});ctx=new (window.AudioContext||window.webkitAudioContext)();
+const src=ctx.createMediaStreamSource(stream);analyser=ctx.createAnalyser();analyser.fftSize=512;src.connect(analyser);const data=new Uint8Array(analyser.fftSize);let strong=0;
+function listen(){analyser.getByteTimeDomainData(data);let sum=0;for(let i=0;i<data.length;i++){let v=(data[i]-128)/128;sum+=v*v}let rms=Math.sqrt(sum/data.length);if(rms>.12)strong++;else strong=Math.max(0,strong-1);if(strong>=5){finishCake();return}raf=requestAnimationFrame(listen)}listen()}
+catch(e){document.getElementById('micText').textContent='Mic permission nahi mili. Neeche wala button use kar lo ❤️'}}
+function finishCake(){if(raf)cancelAnimationFrame(raf);if(stream)stream.getTracks().forEach(t=>t.stop());document.getElementById('cake').classList.add('off');confetti();setTimeout(()=>go('s4'),900)}
+function confetti(){let c=document.getElementById('confetti');c.innerHTML='';for(let i=0;i<100;i++){let p=document.createElement('i');p.className='piece';p.style.left=Math.random()*100+'%';p.style.background=['#ff5b9d','#ffd56a','#fff','#d69cff','#ff9e9e'][i%5];p.style.animationDelay=Math.random()*.6+'s';c.appendChild(p)}setTimeout(()=>c.innerHTML='',4500)}
+</script>
+</body></html>
